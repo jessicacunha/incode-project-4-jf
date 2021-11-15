@@ -1,0 +1,32 @@
+<div class="container">
+
+    <h1 class="text-center">Sign Up</h1>
+
+    <form action="/signup" method="post">
+        
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" 
+                placeholder="Enter First Name">
+        </div>
+        <div class="mb-3">
+            <label for="userName" class="form-label">Username</label>
+            <input type="text" class="form-control" name="userName" id="userName" 
+                placeholder="Enter Username">
+        </div>
+        <div class="mb-3">
+            <label for="userEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="userEmail" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+
+        <div class="mb-3">
+            <label for="userPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="userPassword" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+    </form>
+    <br> <br>
+    <p>Already have an account? <a class="mt-3" href="/">Login</a>.</p>
+    
+</div>

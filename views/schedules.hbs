@@ -1,0 +1,32 @@
+<div class="container">
+
+  <h1 class="text-center">{{pageTitle}}</h1>
+
+  <table class="table col-md-10">
+    <thead>
+      <tr>
+        <th scope="col">User Id</th>
+        <th scope="col">Day</th>
+        <th scope="col">Start at</th>
+        <th scope="col">End at</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each returnedschedules}}
+      <tr>
+        <td>{{this.user_id}}</td>
+        <td>{{this.day}}</td>
+        <td>{{this.start_at}}</td>
+        <td>{{this.end_at}}</td>        
+      </tr>
+      {{/each}}
+    </tbody>
+    
+  </table>
+
+  
+    <div class="col-md-12">
+      <a href="/schedules/new"><button type="button" class="btn btn-outline-secondary">Create a Schedule</button></a>
+    </div>
+ 
+</div>
