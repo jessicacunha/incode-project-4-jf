@@ -1,27 +1,61 @@
-<div class="container">
+{{!-- <div class="container">
 
-    <h1 class="text-center">{{pageTitle}}</h1>
+    <h1 class="text-center">New User</h1>
+
+    <br><br>
 
     <form action="/users/new" method="post">
-        <div class="mb-3">
-            <label for="firstname" class="form-label">First Name</label>
-            <input type="text" class="form-control" name="firstname">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" 
+                placeholder="Enter First Name">
         </div>
-
         <div class="mb-3">
-            <label for="lastname" class="form-label">Last Name</label>
-            <input type="text" class="form-control" name="lastname">
+            <label for="userName" class="form-label">Username</label>
+            <input type="text" class="form-control" name="userName" id="userName" 
+                placeholder="Enter Username">
         </div>
-
         <div class="mb-3">
             <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" name="email">
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+                placeholder="Enter email">
         </div>
+
         <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" name="password">
+            <label for="userPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="userPassword" placeholder="Password">
         </div>
         <button type="submit" class="btn btn-outline-secondary">Send</button>
     </form>
     <div><h1>{{err}}</h1></div>
+</div> --}}
+
+<div class="container">
+
+    <h1 class="text-center">New User</h1>
+
+    <form action="/users/new" method="post">
+        
+        <div class="mb-3">
+            <label for="firstName" class="form-label">First Name</label>
+            <input type="text" class="form-control" name="firstName" id="firstName" 
+                placeholder="Enter First Name">
+        </div>
+        <div class="mb-3">
+            <label for="userName" class="form-label">Username</label>
+            <input type="text" class="form-control" name="userName" id="userName" 
+                placeholder="Enter Username">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp"
+                placeholder="Enter email">
+        </div>
+
+        <div class="mb-3">
+            <label for="userPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" id="userPassword" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-outline-secondary">Submit</button>
+    </form>
 </div>

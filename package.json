@@ -1,5 +1,5 @@
 {
-  "name": "incode-project-3-samer",
+  "name": "incode-project-4-jessica",
   "version": "1.0.0",
   "description": "Schedule Website",
   "main": "index.js",
@@ -8,16 +8,11 @@
     "start": "node index",
     "dev": "nodemon index"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alfarasamer/incode-project-3-Samer.git"
-  },
-  "author": "Samer Al Fara",
+  
+  "author": "Jessica Cunha",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alfarasamer/incode-project-3-Samer/issues"
   },
-  "homepage": "https://github.com/alfarasamer/incode-project-3-Samer#readme",
   "dependencies": {
     "cookie-parser": "^1.4.6",
     "express": "^4.17.1",
